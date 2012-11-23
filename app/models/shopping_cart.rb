@@ -12,7 +12,7 @@ class ShoppingCart < ActiveRecord::Base
   #
   # Override this one with a percentage
   def tax_pct
-    15.34
+    0
   end
 
   #
@@ -21,4 +21,5 @@ class ShoppingCart < ActiveRecord::Base
   # def shipping_cost
   #   5
   # end
+
 end

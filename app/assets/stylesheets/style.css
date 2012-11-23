@@ -1,0 +1,126 @@
+@font-face {
+font-family: PTSans;
+src: url('PTS55F.ttf');
+}
+
+ul {
+	list-style-type:none;
+	-webkit-padding-start: 0px;
+	margin: 0em 0px
+}
+body {
+	background: url(/assets/bg.jpg) no-repeat ;
+	background-color: #000000;
+	background-position-x:center;
+	color: #ffffff;
+	font-family: Tahoma, Arial;
+	font-size: 17px;
+	
+}
+.container {	
+margin: 0px auto;
+width: 1000px;
+}
+header {
+	float: left;
+	height: 150px;
+}
+header a {
+	text-decoration:underline;
+	color: silver;
+}
+.vk {
+	width:370px;
+	float: left;
+	padding-top:40px;
+}
+.vk img {
+	margin-bottom: -5px;
+}
+.logo {
+	width:260px;
+	float: left;
+	padding-top:10px;
+}
+.cart {
+	width:360px;
+	float: right;
+	text-align:right;
+	padding-top:40px;
+	padding-right:10px;
+}
+.cart img {
+	margin-bottom: -5px;
+}
+.menu {
+	margin-top:20px;
+	height: 55px;
+	display: inline-block;
+	width: 100%;
+	background: url('/assets/menu.png') no-repeat;
+}
+.menu ul {
+	padding-top:15px;
+	padding-left: 8%;
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+}
+.menu li {
+	float: left;
+	padding-right:25px;
+	margin-right:25px;
+	background: url("/assets/divider.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.content {
+	padding-top: 60px;
+	display:inline-block;
+}
+.content img {
+	border: 6px solid #333;
+}
+.content ul {
+	text-align:center;
+}
+.content li {
+	float: left;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom:50px;
+}
+.product_name {
+	text-transform: uppercase;
+	padding-bottom:20px;
+	padding-top:10px;
+}
+.product_name a {
+	color:  #ffffff;
+}
+.price_link {
+	display: inline-block;
+	padding: 4px 10px 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	color: white;
+	background-color: #556E8C;
+	text-decoration: none;
+}
+.rur {
+		font-family: PTSans, 'serif';
+		font-size: 18px;
+}
+footer {
+	text-align:center;
+	padding-top:50px;
+}
+.bottom_nav a {
+	text-decoration:underline;
+	color: silver;
+	padding-right:20px;
+}
+.copy {
+	padding-top:20px;
+}

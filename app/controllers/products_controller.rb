@@ -1,6 +1,8 @@
 class ProductsController < ApplicationController
   def index
     @products = Product.all
+    shopping_cart_id = session[:shopping_cart_id]
+    @shopping_cart = session[:shopping_cart_id]
   end
   
   def show
@@ -19,4 +21,5 @@ class ProductsController < ApplicationController
   	@product = Product.create(params[:product])
   	redirect_to product_path(@product)
   end
+  
 end

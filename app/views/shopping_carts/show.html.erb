@@ -1,8 +1,17 @@
-<h1>Shopping Cart</h1>
-
+<div class="content">
+<table class="table">
+  <thead>
+    <tr>
+      <th style="text-align: left;width: 700px;">Товар</th>
+      <th style="text-align: right;width: 280px;">Цена</th>
+    </tr>
+  </thead>
+  <tbody>
 <%= render :partial => 'shopping_cart_item', :collection => @shopping_cart.shopping_cart_items %>
+  </tbody>
+</table>
+<div><b>Всего товаров в корзине: </b><%= @shopping_cart.total_unique_items.to_i %></div>
+<div><b>На сумму: </b><%= @shopping_cart.total.to_i %> <span class="rur">&#8399;</span></div>
 
-<div>
-  <div><b>SubTotal:</b><%= number_to_currency @shopping_cart.subtotal %></div>
-  <div><b>Taxes:</b><%= number_to_currency @shopping_cart.taxes %></div>
-  <div><b>Total:</b><%= number_to_currency @shopping_cart.total %></div>
+  
+</div>

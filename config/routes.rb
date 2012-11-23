@@ -1,7 +1,7 @@
 ActsAsShoppingCartApp::Application.routes.draw do
   resources :products
   resource :shopping_cart
-
+  root :to => 'products#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

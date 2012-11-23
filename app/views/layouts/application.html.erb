@@ -2,13 +2,41 @@
 <html>
 <head>
   <title>ActsAsShoppingCartApp</title>
+  <%= stylesheet_link_tag    "style", :media => "all" %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="container">
+	<header>
+		<div class="vk"><img src="/assets/vk.png" /> Мы <a href="http://vk.com/jasmino">Вконтакте</a></div>
+		<div class="logo"><a href="/"><img src="/assets/logo.png" /></a></div>
+		<div class="cart"><img src="/assets/cart.png" /> <a href="/shopping_cart">Ваша корзина</a></div>
+		<div class="menu">
+			<ul>
+				<li>Все сразу</li>
+				<li><a href="">Кольца</a></li>
+				<li><a href="">Сережки</a></li>
+				<li><a href="">Кулоны и подвески</a></li>
+				<li><a href="">Часы</a></li>
+				<li><a href="">Броши</a></li>
+				<li><a href="">Браслеты</a></li>
+			</ul>
+		</div>
+	</header>
 
 <%= yield %>
 
+<footer>
+		<div class="bottom_nav">
+			<a href="">О магазине</a>
+			<a href="">Доставка</a>
+			<a href="">Помощь</a>
+			<a href="">Контакты</a>
+		</div>
+		<div class="copy">&copy; Jasmino.ru</div>
+	</footer>
+</div>
 </body>
 </html>

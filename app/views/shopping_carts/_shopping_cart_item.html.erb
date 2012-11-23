@@ -1,4 +1,6 @@
-<div>
-  <div><%= shopping_cart_item.item.name %></div>
-  <div><%= shopping_cart_item.item.price %></div>
-</div>
+
+    <tr>
+      <td><%= shopping_cart_item.item.name %></td>
+      <td style="text-align: right;"><%= shopping_cart_item.item.price.to_i %> <span class="rur">&#8399;</span></td>
+    </tr>
+
