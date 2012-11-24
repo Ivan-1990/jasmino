@@ -11,13 +11,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120226183831) do
+ActiveRecord::Schema.define(:version => 20121124111237) do
 
   create_table "products", :force => true do |t|
     t.string   "name"
-    t.integer    "price"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.float    "price"
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
+    t.string   "main_picture_file_name"
+    t.string   "main_picture_content_type"
+    t.integer  "main_picture_file_size"
+    t.datetime "main_picture_updated_at"
+    t.string   "first_picture_file_name"
+    t.string   "first_picture_content_type"
+    t.integer  "first_picture_file_size"
+    t.datetime "first_picture_updated_at"
+    t.string   "second_picture_file_name"
+    t.string   "second_picture_content_type"
+    t.integer  "second_picture_file_size"
+    t.datetime "second_picture_updated_at"
+    t.string   "third_picture_file_name"
+    t.string   "third_picture_content_type"
+    t.integer  "third_picture_file_size"
+    t.datetime "third_picture_updated_at"
   end
 
   create_table "shopping_cart_items", :force => true do |t|
@@ -26,7 +42,7 @@ ActiveRecord::Schema.define(:version => 20120226183831) do
     t.integer  "quantity"
     t.integer  "item_id"
     t.string   "item_type"
-    t.integer  "price"
+    t.float    "price"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

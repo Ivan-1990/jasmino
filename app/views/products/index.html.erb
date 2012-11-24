@@ -2,6 +2,7 @@
 	<ul>
 		<% @products.each do |product| %>
 			<li>
+			<%= image_tag @product.main_picture.url(:medium) %>
 			<div class="product_name"><a href=""><%= product.name %></a></div>
 			<a href="" class="price_link"><%= product.price.to_i %> <span class="rur">&#8399;</span></a>
 			<li>
