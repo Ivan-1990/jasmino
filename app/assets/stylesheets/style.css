@@ -18,9 +18,16 @@ body {
 	
 }
 h1 {
+	-webkit-padding-start: 0px;
 	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	margin-top: -10px;
 	font-size: 23px;
 	font-weight:normal;
+}
+
+p {
+	line-height:25px;
 }
 .container {	
 margin: 0px auto;
@@ -127,6 +134,15 @@ header a {
 }
 .cart_buttons img {
 border:none;
+}
+.add {
+	background: url('/assets/send.png') no-repeat;
+	background-position: right bottom;
+	padding-right: 155px;
+	padding-bottom: 8px;
+	margin-left: 15px;
+	margin-top: 8px;
+	padding-top: 4px;
 }
 .previews {
 	float: left;

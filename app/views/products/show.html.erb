@@ -4,8 +4,9 @@
 	</div>
 	<div class="desc">
 		<h1><%= @product.name %></h1>
-		<%= @product.price %>
-		<div><%= link_to 'Add to cart', shopping_cart_path(:product_id => @product), :method => 'POST' %></div>
+		<p><%= @product.description %></p>
+		<span>Цена: <b><%= @product.price.to_i %></b> <span class="rur">&#8399;</span></span><%= link_to '', shopping_cart_path(:product_id => @product), :class => "add", :method => 'POST' %>
+		
 		
 	</div>
 	
