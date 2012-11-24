@@ -6,6 +6,22 @@
 		<h1><%= @product.name %></h1>
 		<p><%= @product.description %></p>
 		<span>Цена: <b><%= @product.price.to_i %></b> <span class="rur">&#8399;</span></span><%= link_to '', shopping_cart_path(:product_id => @product), :class => "add", :method => 'POST' %>
+		<div class="sharing">
+		
+			<ul>
+				
+				<li><script type="text/javascript"><!--
+				document.write(VK.Share.button(false,{type: "button", text: "Поделиться"}));
+				--></script></li>
+				<li><div class="fb-like" data-layout="button_count" data-width="250" data-show-faces="false"></div></li>
+				
+				<li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="ru">Твитнуть</a></li>
+				<li><div class="g-plusone" data-size="medium"></div></li>
+				
+			</ul>
+		
+		
+		</div>
 		
 		
 	</div>

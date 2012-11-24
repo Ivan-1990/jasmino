@@ -144,6 +144,12 @@ border:none;
 	margin-top: 8px;
 	padding-top: 4px;
 }
+.sharing {
+	padding-top:40px;
+}
+.sharing li {
+	padding-left: 0px;
+}
 .previews {
 	float: left;
 	width: 485px;
