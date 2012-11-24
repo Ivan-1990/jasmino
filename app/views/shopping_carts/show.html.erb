@@ -10,8 +10,9 @@
 <%= render :partial => 'shopping_cart_item', :collection => @shopping_cart.shopping_cart_items %>
   </tbody>
 </table>
-<div><b>Всего товаров в корзине: </b><%= @shopping_cart.total_unique_items.to_i %></div>
-<div><b>На сумму: </b><%= @shopping_cart.total.to_i %> <span class="rur">&#8399;</span></div>
+<div class="summary"><b>Всего товаров в корзине: </b><%= @shopping_cart.total_unique_items.to_i %><br />
+<b>На сумму: </b><%= @shopping_cart.total.to_i %> <span class="rur">&#8399;</span></div>
+<div class="cart_buttons"><a href=""><img src="/assets/delete.png" border="0"></a> <a href=""><img src="/assets/send.png" border="0"></a></div>
 
   
 </div>

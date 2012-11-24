@@ -112,6 +112,17 @@ header a {
 		font-family: PTSans, 'serif';
 		font-size: 18px;
 }
+.summary {
+	display: inline;
+}
+.cart_buttons {
+	display: inline;
+	float: right;
+	margin-top: -15px;
+}
+.cart_buttons img {
+border:none;
+}
 footer {
 	text-align:center;
 	padding-top:50px;
