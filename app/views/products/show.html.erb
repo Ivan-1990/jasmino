@@ -1,3 +1,15 @@
-<%= @product.name %>
-<%= @product.price %>
-<div><%= link_to 'Add to cart', shopping_cart_path(:product_id => @product), :method => 'POST' %></div>
+<div class="content">
+	<div class="previews">
+		<%= image_tag @product.main_picture.url(:large) %>
+	</div>
+	<div class="desc">
+		<h1><%= @product.name %></h1>
+		<%= @product.price %>
+		<div><%= link_to 'Add to cart', shopping_cart_path(:product_id => @product), :method => 'POST' %></div>
+		
+	</div>
+	
+	
+	
+	
+	</div>

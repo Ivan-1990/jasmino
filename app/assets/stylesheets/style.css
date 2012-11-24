@@ -17,6 +17,11 @@ body {
 	font-size: 17px;
 	
 }
+h1 {
+	-webkit-margin-before: 0em;
+	font-size: 23px;
+	font-weight:normal;
+}
 .container {	
 margin: 0px auto;
 width: 1000px;
@@ -122,6 +127,14 @@ header a {
 }
 .cart_buttons img {
 border:none;
+}
+.previews {
+	float: left;
+	width: 485px;
+}
+.desc {
+	float: right;
+	width: 500px;
 }
 footer {
 	text-align:center;
