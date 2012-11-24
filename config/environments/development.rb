@@ -35,4 +35,5 @@ ActsAsShoppingCartApp::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
   config.assets.paths << "#{Rails.root}/app/assets/fonts"
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 end
